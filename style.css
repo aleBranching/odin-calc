@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+#calcBody {
+  display: grid;
+  justify-content: stretch;
+  /* grid-template-columns: auto; */
+
+  grid-template-areas:
+    "screen screen screen screen"
+    "clears clears delete delete";
+}
+#calcBody > div {
+  height: 60px;
+  width: 60px;
+}
+#calcBody > div:nth-child(n + 2):nth-child(-n + 3):hover {
+  background-color: hsla(0, 0%, 0%, 0.467);
+}
+#calcBody > div {
+  /* border: red solid 1px; */
+}
+
+#calcBody > div:nth-child(n - 2) {
+  /* height: 60px; */
+  /* width: 60px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(60, 62%, 31%);
+}
+#calcBody > div:nth-child(n + 4) {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+#calcBody > div:nth-child(n + 4):hover {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(60, 18%, 70%);
+}
+
+#screen {
+  grid-area: screen;
+  /* grid-area: 1 / 4; */
+  /* -ms-grid-row-span: 4; */
+  border: 1px solid green;
+}
+#clear {
+  border: 1px solid green;
+
+  grid-area: clears;
+}
+#delete {
+  border: 1px solid green;
+  grid-area: delete;
+}
+
+#keypad {
+  /* grid-area: keypad; */
+}
+
+#calcBody {
+  border: 3px solid black;
+}
