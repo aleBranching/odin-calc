@@ -128,47 +128,6 @@ numberKeys.forEach((aKey) => {
   });
 });
 
-// operatorKeys.forEach((aKey) => {
-//   aKey.addEventListener("click", (e) => {
-//     let value = e.target.dataset.func;
-//     if (value !== "=" && lastNumber !== "") {
-//       firstInput = false;
-
-//       registeredOperator = value;
-//       let computed = compute(
-//         registeredOperator,
-//         Number(firstNumber),
-//         Number(lastNumber)
-//       );
-//       console.log("computed", computed);
-//       updateScreen(computed);
-//     } else if (value !== "=") {
-//       firstInput = false;
-//       registeredOperator = value;
-//     } else if (firstInput == false) {
-//       console.log("here");
-//       console.log(registeredOperator, firstNumber, lastNumber);
-//       let computed = compute(
-//         registeredOperator,
-//         Number(firstNumber),
-//         Number(lastNumber)
-//       );
-//       console.log("computed", computed);
-//       updateScreen(computed);
-//       if (registeredOperator == "=") {
-//         reset();
-//         firstNumber = String(computed);
-//       } else {
-//         firstNumber = String(computed);
-//         lastNumber = "";
-//         registeredOperator = value;
-//         firstInput = false;
-//       }
-//     }
-//     // TODO: need an else
-//   });
-// });
-
 operatorKeys.forEach((aKey) => {
   aKey.addEventListener(
     "click",
