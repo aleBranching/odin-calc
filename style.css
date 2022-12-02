@@ -47,6 +47,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: beige;
+  /* border-left: 2px solid red; */
+  /* border-bottom: 2px solid red; */
+  border: 2px solid hsl(60, 62%, 31%);
 }
 #calcBody > div:nth-child(n + 4):hover {
   height: 60px;
@@ -61,15 +64,21 @@ body {
   grid-area: screen;
   /* grid-area: 1 / 4; */
   /* -ms-grid-row-span: 4; */
-  border: 1px solid green;
+  border: 2px solid beige;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+#screenText {
+  margin-top: 14px;
 }
 #clear {
-  border: 1px solid green;
+  border: 1px solid beige;
 
   grid-area: clears;
 }
 #delete {
-  border: 1px solid green;
+  border: 1px solid beige;
   grid-area: delete;
 }
 
@@ -78,5 +87,6 @@ body {
 }
 
 #calcBody {
-  border: 3px solid black;
+  border: 15px solid beige;
+  border-radius: 15px;
 }
